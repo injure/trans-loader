@@ -1,4 +1,6 @@
 from CyberMarsParser import CyberMarsParser
+from CsvParser import CsvParser
+
 class ParserFactory(object):
     def __init__(self):
         pass
@@ -8,7 +10,7 @@ class ParserFactory(object):
         extension = file_path.split('.')[-1].lower()
         if extension == 'char':
             return CyberMarsParser()
-        elif extension == 'cvs':
-            raise NotImplementedError
+        elif extension == 'csv':
+            return CsvParser()
         else:
             raise Exception
