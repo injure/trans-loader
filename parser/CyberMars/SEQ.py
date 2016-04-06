@@ -5,6 +5,6 @@ class SEQ(IField):
         super(SEQ, self).__init__(origin_value)
         self.value = SEQ.change_format(origin_value)
 
-    @classmethod
-    def change_format(cls, origin_value):
-        return origin_value
+    # @classmethod
+    # def change_format(cls, origin_value):
+    #     return origin_value

@@ -40,8 +40,8 @@ class CyberMarsParser(IParser):
                 content = line[head:tail]
                 _logger.debug('Origin Content: {}'.format(content))
                 tmp_field = FieldFactory.get_field(field, content)
-                _logger.debug('{}: {}'.format(field, tmp_field.value))
-                setattr(trans, field, tmp_field.value)
+                _logger.debug('{}: {}'.format(field, tmp_field.get_value()))
+                setattr(trans, field, tmp_field.get_value())
             else:
                 raise Exception
             _logger.debug('===============================================')

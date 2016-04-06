@@ -5,6 +5,6 @@ class MerchantId(IField):
         super(MerchantId, self).__init__(origin_value)
         self.value = MerchantId.change_format(origin_value)
 
-    @classmethod
-    def change_format(cls, origin_value):
-        return origin_value
+    # @classmethod
+    # def change_format(cls, origin_value):
+    #     return origin_value

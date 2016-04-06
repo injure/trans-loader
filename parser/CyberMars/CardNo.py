@@ -5,6 +5,6 @@ class CardNo(IField):
         super(CardNo, self).__init__(origin_value)
         self.value = CardNo.change_format(origin_value)
 
-    @classmethod
-    def change_format(cls, origin_value):
-        return origin_value
+    # @classmethod
+    # def change_format(cls, origin_value):
+    #     return origin_value
