@@ -12,3 +12,4 @@ if __name__ == '__main__':
 
     trans_loader = TransLoader()
     trans_loader.load_charge_file('charge/test.char')
+    trans_loader.load_charge_file('charge/test.csv')
