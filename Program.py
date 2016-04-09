@@ -12,10 +12,17 @@ if __name__ == '__main__':
 
     trans_loader = TransLoader()
 
+    print 'CyberMars charge'
     trans_list = trans_loader.load_charge_file('charge/test.char')
     for trans in trans_list:
         print trans.to_string()
 
+    print 'csv charge'
     trans_list = trans_loader.load_charge_file('charge/test.csv')
+    for trans in trans_list:
+        print trans.to_string()
+
+    print 'json charge'
+    trans_list = trans_loader.load_charge_file('charge/test.json')
     for trans in trans_list:
         print trans.to_string()
