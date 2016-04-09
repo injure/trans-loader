@@ -1,0 +1,25 @@
+[
+  {
+    "DataSeq" : "99990000",
+    "TransactionType" : "Sale",
+    "MerchantId" : "1111100000",
+    "CardNo" : "3504751285381250",
+    "ExpiredDate" : "2207",
+    "TransactionAmount" : "11.00",
+    "TransactionDate" : "2015/12/02",
+    "transactionTime" : "12:02:02",
+    "cardType" : "VISA"
+  },
+  {
+    "DataSeq" : "99990001",
+    "TransactionType" : "Refund",
+    "MerchantId" : "1111100000",
+    "CardNo" : "3504751285381250",
+    "ExpiredDate" : "2207",
+    "TransactionAmount" : "11.00",
+    "TransactionDate" : "2015/12/02",
+    "transactionTime" : "12:02:02",
+    "cardType" : "MASTER"
+  }
+
+]
