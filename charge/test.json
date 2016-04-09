@@ -7,8 +7,8 @@
     "ExpiredDate" : "2207",
     "TransactionAmount" : "11.00",
     "TransactionDate" : "2015/12/02",
-    "transactionTime" : "12:02:02",
-    "cardType" : "VISA"
+    "TransactionTime" : "12:02:02",
+    "CardType" : "VISA"
   },
   {
     "DataSeq" : "99990001",
@@ -18,8 +18,8 @@
     "ExpiredDate" : "2207",
     "TransactionAmount" : "11.00",
     "TransactionDate" : "2015/12/02",
-    "transactionTime" : "12:02:02",
-    "cardType" : "MASTER"
+    "TransactionTime" : "12:02:02",
+    "CardType" : "MASTER"
   }
 
 ]
