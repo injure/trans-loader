@@ -2,6 +2,7 @@ from parser.IField import IField
 class CardType(IField):
 
     transform = {
+        '3': 'CardType.UnionPay',
         '2': 'CardType.MASTER',
         '1': 'CardType.VISA',
         '0': 'CardType.JCB'
