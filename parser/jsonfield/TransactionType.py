@@ -1,4 +1,4 @@
-from parser.IField import IField
+from parser.interface.IField import IField
 
 class TransactionType(IField):
 

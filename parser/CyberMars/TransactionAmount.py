@@ -1,5 +1,7 @@
-from parser.IField import IField
 from decimal import Decimal
+
+from parser.interface.IField import IField
+
 
 class TransactionAmount(IField):
     def __init__(self, origin_value):

@@ -1,4 +1,4 @@
-from parser.IField import IField
+from parser.interface.IField import IField
 
 class TransactionTime(IField):
     def __init__(self, origin_value):
