@@ -1,5 +1,7 @@
-from parser.ParserFactory import ParserFactory
 import logging
+
+from ParserFactory import ParserFactory
+
 _logger = logging.getLogger(__name__)
 
 class TransLoader(object):
