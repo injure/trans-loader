@@ -1,8 +1,10 @@
-from IParser import IParser
-from Transaction import Transaction
-from parser.jsonfield.FieldFactory import FieldFactory
 import json
 import logging
+
+from Transaction import Transaction
+from parser.interface.IParser import IParser
+from parser.jsonfield.FieldFactory import FieldFactory
+
 _logger = logging.getLogger(__name__)
 
 # field name of json file map to attribute name of object Transaction
@@ -20,7 +22,7 @@ JsonFormat = {
 
 class JsonParser(IParser):
     def __init__(self):
-        super(JsonParser, self).__init__()
+        super(JsonParser, self).__init__('json')
 
     def parse_file(self, file_path):
         _logger.info('start parse file')

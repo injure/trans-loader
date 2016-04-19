@@ -1,7 +1,9 @@
-from IParser import IParser
+import logging
+
 from Transaction import Transaction
 from parser.CyberMars.FieldFactory import FieldFactory
-import logging
+from parser.interface.IParser import IParser
+
 _logger = logging.getLogger(__name__)
 
 CyberMarsFormat = {
@@ -18,7 +20,7 @@ CyberMarsFormat = {
 
 class CyberMarsParser(IParser):
     def __init__(self):
-        super(CyberMarsParser, self).__init__()
+        super(CyberMarsParser, self).__init__('char')
 
     def parse_file(self, file_path):
         _logger.info('start parse file')

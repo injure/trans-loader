@@ -1,7 +1,9 @@
-from IParser import IParser
+import logging
+
 from Transaction import Transaction
 from parser.csv.FieldFactory import FieldFactory
-import logging
+from parser.interface.IParser import IParser
+
 _logger = logging.getLogger(__name__)
 
 CsvFormat = {
@@ -18,7 +20,7 @@ CsvFormat = {
 
 class CsvParser(IParser):
     def __init__(self):
-        super(CsvParser, self).__init__()
+        super(CsvParser, self).__init__('csv')
 
     def parse_file(self, file_path):
         _logger.info('start parse file')
