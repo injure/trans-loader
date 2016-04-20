@@ -15,19 +15,14 @@ class ParserFactory(object):
             tar_parser_clsname = config_dict[extension]
         else:
             raise Exception
-        module = importlib.import_module('parser/CyberMarsParser')
+        module = importlib.import_module('parser.' + tar_parser_clsname)
         parser = getattr(module, tar_parser_clsname)
         return parser()
 
-        # if extension == 'char':
-        #     return CyberMarsParser()
-        # elif extension == 'csv':
-        #     return CsvParser()
-        # elif extension == 'json':
-        #     return JsonParser()
-        # else:
-        #     raise Exception
-
 if __name__ == '__main__':
     parser = ParserFactory.get_parser('test.char')
+    print type(parser)
+    parser = ParserFactory.get_parser('test.csv')
+    print type(parser)
+    parser = ParserFactory.get_parser('test.json')
     print type(parser)
