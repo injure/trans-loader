@@ -15,9 +15,13 @@ class ParserFactory(object):
             tar_parser_clsname = config_dict[extension]
         else:
             raise Exception
-        module = importlib.import_module('parser.' + tar_parser_clsname)
-        parser = getattr(module, tar_parser_clsname)
-        return parser()
+        try:
+            module = importlib.import_module('parser.' + tar_parser_clsname)
+            parser = getattr(module, tar_parser_clsname)
+        except:
+            raise Exception
+        else:
+            return parser()
 
 if __name__ == '__main__':
     parser = ParserFactory.get_parser('test.char')
